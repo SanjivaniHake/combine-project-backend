@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: com-backend-app
+  labels:
+    app: com-backend-app
+spec: 
+ selector:
+   matchLabels: 
+     app: com-backend-app
+ replica: 2
+ template:
+    metadata:
+     matchLabels:
+      app: com-backend-app
+    spec:
+      container:
+       - name: com-backend-app
+         image: hakesanjivani/com-backend:latest  
+         ports:
+           containerPort: 8080   
