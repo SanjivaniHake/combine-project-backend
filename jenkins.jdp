@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('pull') {
            steps {
-             git branch: 'dev', url: 'https://github.com/SanjivaniHake/combine-project-backend.git'
+             git branch: 'Dev', url: 'https://github.com/SanjivaniHake/combine-project-backend.git'
            }
         }
         stage ('build') {
