@@ -17,8 +17,8 @@ pipeline {
                 docker build . -t hakesanjivani/com-backend:latest
                 docker push hakesanjivani/com-backend:latest
                 docker rmi hakesanjivani/com-backend:latest
-                kubectl apply -f ./deployment.yaml
-                kubectl apply -f ./service.yaml
+                kubectl apply -f ./deployment.yaml/
+                kubectl apply -f ./service.yaml/
              '''
             
            }
