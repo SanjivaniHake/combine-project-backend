@@ -8,13 +8,13 @@ spec:
  selector:
    matchLabels: 
      app: com-backend-app
- replica: 2
+ replicas: 2
  template:
     metadata:
-     matchLabels:
-      app: com-backend-app
+      labels:
+        app: com-backend-app
     spec:
-      container:
+      containers:
        - name: com-backend-app
          image: hakesanjivani/com-backend:latest  
          ports:
